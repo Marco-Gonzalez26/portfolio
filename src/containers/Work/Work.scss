@@ -130,6 +130,22 @@
   position: relative;
   flex-direction: column;
   text-align: center;
+  
+  .app__work-content-mobile {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    display: none;
+
+    a{
+      margin: 1rem;
+      font-size: 1.5rem;
+      color: #000;
+    }
+    @media screen and (max-width: 40em) {
+      display: flex;
+    }
+  }
   h4 {
     margin-top: 1rem;
     line-height: 1.5;
@@ -140,8 +156,9 @@
 
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-
+    color: #000;
     background-color: #fff;
     top: -25px;
   }
+
 }

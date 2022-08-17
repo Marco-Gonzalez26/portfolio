@@ -109,6 +109,32 @@ const Work = () => {
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
               </div>
+              <div className="app__work-content-mobile">
+                <a href={work.projectLink} rel="noreferrer" target="_blank">
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{
+                      duration: 0.25
+                    }}
+                    className="app__flex"
+                  >
+                    <AiFillEye />
+                  </motion.div>
+                </a>
+                <a href={work.codeLink} rel="noreferrer" target="_blank">
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{
+                      duration: 0.25
+                    }}
+                    className="app__flex"
+                  >
+                    <AiFillGithub />
+                  </motion.div>
+                </a>
+              </div>
             </div>
           </div>
         ))}
