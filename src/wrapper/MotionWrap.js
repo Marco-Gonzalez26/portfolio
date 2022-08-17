@@ -8,6 +8,7 @@ const MotionWrap = (Component, classNames) =>
         whileInView={{ opacity: [0, 0, 1], y: [100, 50, 0] }}
         transition={{ duration: 0.5 }}
         className={`${classNames} app__flex`}
+        viewport={{ once: true }}
       >
         <Component/>
       </motion.div>

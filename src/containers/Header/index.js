@@ -25,6 +25,7 @@ const Header = () => (
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
       className="app__header-info"
+      viewport={{ once: true }}
     >
       <div className="app__header-badge">
         <div className="badge-cmp app__flex">
@@ -46,6 +47,7 @@ const Header = () => (
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className="app__header-img"
+      viewport={{ once: true }}
     >
       <motion.img
         whileInView={{ scale: [0, 1] }}
@@ -53,6 +55,7 @@ const Header = () => (
         src={logo}
         alt="profile_bg"
         className="logo-img"
+        viewport={{ once: true }}
       />
       <motion.img
         whileInView={{ scale: [0, 1] }}
@@ -60,6 +63,7 @@ const Header = () => (
         src={circle}
         alt="profile_circle"
         className="overlay_circle"
+        viewport={{ once: true }}
       />
     </motion.div>
 
@@ -67,6 +71,7 @@ const Header = () => (
       variants={scaleVariants}
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
+      viewport={{ once: true }}
     >
       {[js, react, redux].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
