@@ -4,11 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  min-height: 2rem;
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  --webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
@@ -20,8 +19,8 @@
   align-items: center;
 
   img {
-    width: 50px;
-    height: 50px;
+    width: 2.25rem;
+    height: 2.25rem;
 
     @media screen and (min-width: 2000px) {
       font-size: 70px;
@@ -58,7 +57,7 @@
       flex-direction: column;
       font-size: clamp(1.25rem, 1.5rem, 2rem);
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 400;
 
       transition: all 0.3s ease-in-out;
 
@@ -91,8 +90,8 @@
   background-color: var(--secondary-color);
 
   svg {
-    width: 70%;
-    height: 70%;
+    width: 75%;
+    height: 75%;
     color: var(--white-color);
     cursor: pointer;
   }
@@ -112,8 +111,6 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-
-    background: url('../../assets/bgWhite.png');
 
     background-color: var(--white-color);
     background-size: cover;
@@ -167,4 +164,3 @@
     display: none;
   }
 }
-
