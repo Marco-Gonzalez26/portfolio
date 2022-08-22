@@ -144,7 +144,7 @@
       font-size: clamp(1rem, 1.5rem, 2rem);
       color: #000;
     }
-    @media screen and (min-width: 40em) {
+    @media screen and (max-width: 70em) {
       display: flex;
     }
   }
