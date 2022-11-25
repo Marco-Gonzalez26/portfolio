@@ -30,7 +30,7 @@ const Footer = () => {
     emailjs
       .sendForm(
         'Portfolio',
-        'template_oz308ln',
+        'Template_Marco',
         formRef.current,
         'NLSVp9vPRcYhv7yBe'
       )
@@ -64,8 +64,8 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={mobile} alt="mobile" />
-          <a href="tel:+593978853786" className="p-text">
-            +593978853786
+          <a href="tel:+593979619182" className="p-text">
+            +593979619182
           </a>
         </div>
       </div>
